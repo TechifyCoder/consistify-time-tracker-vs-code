@@ -1,9 +1,30 @@
 {
   "name": "consistify-time-tracker",
   "displayName": "Consistify Time Tracker",
-  "description": "Tracks your active coding time and syncs it to your Consistify dashboard.",
-  "version": "0.0.1",
-  "publisher": "consistify",
+  "description": "Automatically tracks your active coding time in VS Code and syncs it to your Consistify dashboard. Stay consistent and build better coding habits.",
+  "version": "1.0.0",
+  "publisher": "satishpatel",
+  "icon": "images/icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechifyCoder/consistify-time-tracker-vs-code"
+  },
+  "homepage": "https://consis-sigma.vercel.app",
+  "bugs": {
+    "url": "https://github.com/TechifyCoder/consistify-time-tracker-vs-code/issues"
+  },
+  "keywords": [
+    "time tracker",
+    "coding time",
+    "productivity",
+    "consistify",
+    "habit tracker",
+    "wakatime",
+    "activity",
+    "stats",
+    "dashboard"
+  ],
   "engines": {
     "vscode": "^1.85.0"
   },

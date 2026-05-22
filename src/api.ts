@@ -9,9 +9,7 @@ export interface HeartbeatPayload {
     duration: number;      // Active seconds in this batch — e.g. 45
 }
 
-// Development: point at your local Consistify app
-// Production:  change to your deployed URL, e.g. 'https://your-app.vercel.app'
-const BASE_URL = 'http://127.0.0.1:3000';
+const BASE_URL = 'https://consis-sigma.vercel.app';
 const HEARTBEAT_ENDPOINT = '/api/vscode/heartbeat';
 const TIMEOUT_MS = 8_000;
 
@@ -41,7 +39,7 @@ export function sendBatch(
                 'Content-Type': 'application/json',
                 'Content-Length': Buffer.byteLength(body),
                 Authorization: `Bearer ${apiKey}`,
-                'User-Agent': 'consistify-vscode/0.0.1',
+                'User-Agent': 'consistify-vscode/1.0.0',
             },
         };
 

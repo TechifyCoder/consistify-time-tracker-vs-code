@@ -51,7 +51,7 @@ async function handleSetApiKey(context) {
     const existing = await context.secrets.get(API_KEY_SECRET);
     const input = await vscode.window.showInputBox({
         title: 'Consistify: Set Extension Token',
-        prompt: 'Paste your Extension Token from: localhost:3000/dashboard/vscode → Token Panel',
+        prompt: 'Paste your Extension Token from: https://consis-sigma.vercel.app/dashboard/vscode → Token Panel',
         password: true,
         placeHolder: 'ck_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         value: existing ?? '',
